@@ -68,9 +68,9 @@ function ingresoProducto() {
 
     do {
         item = new carritoItem(prompt("Ingrese el nombre del producto, por favor"),
-            parseInt(prompt("ingrese el precio del producto, por favor")),
+            parseInt(prompt("Ingrese el precio del producto, por favor")),
             prompt("Ingrese la marca del producto, por favor"),
-            prompt("Ingrese categoria del producto"));
+            prompt("Ingrese categoria del producto, por favor"));
         productosCargados(item);
         carritoArrayConIva = carritoArray.map((item) => { return { nombre: item.nombre, precio: item.precio * 1.21, marca: item.marca, categoria:item.categoria} });
         mostrarCarritoConIva(carritoArrayConIva);
